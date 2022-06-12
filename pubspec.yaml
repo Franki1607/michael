@@ -41,6 +41,7 @@ dependencies:
   introduction_screen:
   dropdown_search: ^3.0.1
   google_maps_flutter: ^2.1.5
+  geolocator: ^8.2.1
 
 dev_dependencies:
   flutter_test:
