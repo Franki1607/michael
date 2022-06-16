@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:michael/db/database_helper.dart';
 import 'package:michael/db/shared_preferences.dart';
 import 'package:michael/models/my_model.dart';
+import 'package:michael/pages/borne_page.dart';
 import 'package:michael/pages/show_page.dart';
 
 import '../const.dart';
@@ -47,7 +48,8 @@ class _MainPageState extends State<MainPage> {
             return InkWell(
               onTap: () async{
                 await Preferences.setIntValue(keyCurrentChamp, allmodels[index].id);
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>ShowPage(allmodels[index].d_name, allmodels[index].d_superficie)));
+              // Navigator.push(context, MaterialPageRoute(builder: (context)=>ShowPage(allmodels[index].d_name, allmodels[index].d_superficie)));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>BornePage()));
             },
               child: Card(
                 child: Column(

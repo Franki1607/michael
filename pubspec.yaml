@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   file_picker:
   shared_preferences:
+  http:
   hive:
   hive_flutter:
   introduction_screen:
