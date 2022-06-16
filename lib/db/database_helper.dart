@@ -143,7 +143,7 @@ class DatabaseHelper{
       var response = await http.get(Uri.parse("https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=dbbde5c2cae1413c98aa7270aa90740e"),);
       var response_json=json.decode(response.body);
       print(response_json);
-      humidity= new Humidity(response_json["main"]["humidity"], double.parse("${response_json["main"]["pressure"]}"), double.parse("${response_json["main"]["temp"]}"));
+      humidity= new Humidity(double.parse("${response_json["main"]["humidity"]}"), double.parse("${response_json["main"]["pressure"]}"), double.parse("${response_json["main"]["pressure"]}"));
       return humidity;
 
     }catch(e){
